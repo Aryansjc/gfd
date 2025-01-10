@@ -1,0 +1,97 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  transition: background 0.5s ease;
+}
+
+.win-background {
+  animation: green-gradient 3s infinite alternate;
+}
+
+.lose-background {
+  animation: red-gradient 3s infinite alternate;
+}
+
+.neutral-background {
+  background: linear-gradient(135deg, #3db1ff, #3db1ff);
+}
+
+@keyframes green-gradient {
+  0% {
+    background: linear-gradient(135deg, #00ff37, #00ff22);
+  }
+  100% {
+    background: linear-gradient(135deg, #00ff2a, #00ff4c);
+  }
+}
+
+@keyframes red-gradient {
+  0% {
+    background: linear-gradient(135deg, #e70202, #e70202);
+  }
+  100% {
+    background: linear-gradient(135deg, #e70202, #e70202);
+  }
+}
+
+.game-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+#choices-display {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.choice {
+  text-align: center;
+}
+
+.emoji {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: #ff6f61;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.buttons button:hover {
+  background: #e94e3f;
+  transform: scale(1.1);
+}
+
+#message {
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
